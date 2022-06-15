@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main div.card {
+  height: 250px;
+  width: 50%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.card .pics {
+  width: 40%;
+  height: 100%;
+  background-image: url(/static/flower.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.card .text {
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  padding: 25px;
+  color: #48556a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.text h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+div.text p {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+}
+
+div.text .info {
+  display: flex;
+  align-items: center;
+}
+div.text .info .person {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+}
+
+.info-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+div.text .info .share {
+  border-radius: 20px;
+  background-color: #ecf2f8;
+  padding: 5px;
+}
+
+div.text .info .share:active {
+  opacity: 0.5;
+}
+
+.grow {
+  flex-grow: 1;
+}
